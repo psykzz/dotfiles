@@ -2,7 +2,7 @@
 
 ZSH_THEME="psykzz"
 COMPLETION_WAITING_DOTS="true"
-plugins=(aws git brew python docker docker-compose osx)
+plugins=(aws git brew python docker docker-compose osx virtualenv)
 
 # User configuration
 
