@@ -9,7 +9,7 @@ plugins=(aws git brew python docker docker-compose osx)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-[ -f ~/.secrets ] || source ~/.secrets
+[ -f ~/.secrets ] && source ~/.secrets
 
 ###### Custom stuff ######
 
