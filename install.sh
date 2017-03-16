@@ -6,6 +6,7 @@ brew install python python3 nvm git zsh
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "If you get a password error, run the following :: sudo chsh -s /bin/zsh $(whoami)"
 
 # Get oh-my-zsh theme, aliases, and profile
 curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/oh-my-zsh/themes/psykzz.zsh-theme > ~/.oh-my-zsh/themes/psykzz.zsh-theme
