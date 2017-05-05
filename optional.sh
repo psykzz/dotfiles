@@ -12,4 +12,8 @@ confirm() {
 }
 
 confirm "Would you like to install optional components? [y/N] " || exit 0;
-echo "Nothing to see here"
+echo "Installing Slack, discord and spotify"
+
+brew cask install slack
+brew cask install discord
+brew cask install spotify
