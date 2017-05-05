@@ -1,5 +1,6 @@
 xcode-select --install
 
+# Install homebrew and my common packages
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install caskroom/cask/brew-cask # Install brew cask
 brew install python python3 nvm git zsh awscli rbenv 
@@ -14,12 +15,15 @@ curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/dot.aliases 
 echo "export ZSH=$(echo ~)/.oh-my-zsh" > ~/.zshrc
 curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/dot.zshrc >> ~/.zshrc
 
-# install and use the latest node
+# Install and use the latest node
 export NVM_DIR="$(echo ~)/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 nvm install --lts
 
-# Install Atom
+# Install iterm2
+brew cask install iterm2
+
+# Install Chrome
 brew cask install google-chrome
 
 # Install java
