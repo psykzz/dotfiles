@@ -129,3 +129,10 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+# applications :3
+alias jekyll="docker run --rm -it -p 127.0.0.1:4000:4000 --label=jekyll --volume=\$(pwd):/srv/jekyll -it jekyll/jekyll jekyll"
+
+function notify() {
+  osascript -e "display notification \"$2\" with title \"$1\""
+}
