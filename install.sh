@@ -3,6 +3,7 @@ xcode-select --install
 # Install homebrew and my common packages
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install caskroom/cask/brew-cask # Install brew cask
+
 brew install python python3 nvm git zsh awscli rbenv 
 
 # Install oh-my-zsh
@@ -20,19 +21,11 @@ export NVM_DIR="$(echo ~)/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 nvm install --lts
 
-# Install iterm2
 brew cask install iterm2
-
-# Install Chrome
 brew cask install google-chrome
-
-# Install java
 brew cask install java
-
-# Install docker
+brew cask install github
 brew cask install docker
-
-# Install Atom
 brew cask install atom
 
 # Optional
