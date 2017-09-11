@@ -17,3 +17,5 @@ echo "Installing Slack, discord and spotify"
 brew cask install slack
 brew cask install discord
 brew cask install spotify
+brew cask install viber
+
