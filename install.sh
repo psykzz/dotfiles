@@ -4,7 +4,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install caskroom/cask/brew-cask # Install brew cask
 
-brew install python python3 nvm git zsh awscli rbenv 
+brew install python python3 nvm git zsh awscli rbenv fd
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
