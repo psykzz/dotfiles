@@ -4,7 +4,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install caskroom/cask/brew-cask # Install brew cask
 
-brew install python python3 nvm git zsh awscli rbenv fd
+brew install python python3 git zsh awscli rbenv fd
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -17,8 +17,9 @@ echo "export ZSH=$(echo ~)/.oh-my-zsh" > ~/.zshrc
 curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/dot.zshrc >> ~/.zshrc
 
 # Install and use the latest node
+git clone https://github.com/creationix/nvm.git .nvm
 export NVM_DIR="$(echo ~)/.nvm"
-source $(brew --prefix nvm)/nvm.sh
+source ~/.nvm/nvm.sh
 nvm install --lts
 
 brew cask install iterm2
