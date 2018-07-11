@@ -22,12 +22,15 @@ export NVM_DIR="$(echo ~)/.nvm"
 source ~/.nvm/nvm.sh
 nvm install --lts
 
-brew cask install iterm2
-brew cask install google-chrome
-brew cask install java
-brew cask install github
+brew cask install bitbar
 brew cask install docker
-brew cask install vscode
+brew cask install github
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install java
+brew cask install ngrok
+brew cask install visual-studio-code
+brew cask install vagrant
 
 # Optional
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/optional.sh)"
