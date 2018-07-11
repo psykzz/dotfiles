@@ -1,7 +1,6 @@
 # Above Path is to your oh-my-zsh installation.
 
 ZSH_THEME="psykzz"
-COMPLETION_WAITING_DOTS="true"
 plugins=(aws git node brew python docker docker-compose osx virtualenv)
 
 # User configuration
@@ -13,6 +12,10 @@ source ~/.aliases
 ###### Custom stuff ######
 # AWS configuration
 export AWS_CONFIG_FILE="~/.aws/config"
+
+# Default editor
+export EDITOR=$(which code)
+
 
 # NVM stuff
 # Defer initialization of nvm until nvm, node or a node-dependent command is
@@ -37,7 +40,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Java Home & setup
 export JAVA_HOME="$(/usr/libexec/java_home)"
-
 export MAVEN_OPTS="-Xmx2G -Xms2G -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=128m"
 export PATH="/usr/local/sbin:$PATH"
 export OAUTHLIB_INSECURE_TRANSPORT=1
