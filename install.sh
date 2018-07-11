@@ -27,7 +27,7 @@ brew cask install google-chrome
 brew cask install java
 brew cask install github
 brew cask install docker
-brew cask install sublime-text
+brew cask install vscode
 
 # Optional
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/optional.sh)"
