@@ -28,6 +28,7 @@ brew cask install github
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install java
+brew cask install p4v
 brew cask install ngrok
 brew cask install visual-studio-code
 brew cask install vagrant
