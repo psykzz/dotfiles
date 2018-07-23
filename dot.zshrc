@@ -1,21 +1,23 @@
+export ZSH=/Users/msmith/.oh-my-zsh
 # Above Path is to your oh-my-zsh installation.
 
 ZSH_THEME="psykzz"
-plugins=(aws git node brew python docker docker-compose osx virtualenv)
+plugins=(aws git python docker docker-compose osx virtualenv)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 source $ZSH/oh-my-zsh.sh
-source ~/.aliases
+[ ! -f ~/.aliases ] || source ~/.aliases
 [ ! -f ~/.secrets ] || source ~/.secrets
 
 ###### Custom stuff ######
+
 # AWS configuration
 export AWS_CONFIG_FILE="~/.aws/config"
 
-# Default editor
-export EDITOR=$(which code)
-
+# Python
+# Add Path from Homebrew
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # NVM stuff
 # Defer initialization of nvm until nvm, node or a node-dependent command is
@@ -40,6 +42,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Java Home & setup
 export JAVA_HOME="$(/usr/libexec/java_home)"
+
 export MAVEN_OPTS="-Xmx2G -Xms2G -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=128m"
 export PATH="/usr/local/sbin:$PATH"
 export OAUTHLIB_INSECURE_TRANSPORT=1
