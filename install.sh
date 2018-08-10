@@ -16,6 +16,10 @@ curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/dot.aliases 
 echo "export ZSH=$(echo ~)/.oh-my-zsh" > ~/.zshrc
 curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/dot.zshrc >> ~/.zshrc
 
+# Setup global git config
+curl -fsSL https://raw.githubusercontent.com/psykzz/dotfiles/master/dot.gitignore >> ~/.gitignore
+git config --global --unset core.excludesfile && git config --global --add core.excludesfile ~/.gitignore
+
 # Install and use the latest node
 git clone https://github.com/creationix/nvm.git .nvm
 export NVM_DIR="$(echo ~)/.nvm"
